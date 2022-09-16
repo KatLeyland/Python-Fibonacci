@@ -18,6 +18,7 @@ def findMaxValue():  # create function
     global maxValue
     maxValue = 0 # set initial value to compare against
     for numbers in list:
+
         if numbers > maxValue:
             maxValue = numbers  # compare each number to current highest value, if new number greater then that becomes max
         else:
