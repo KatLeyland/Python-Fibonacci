@@ -17,8 +17,7 @@ def find_max_value():  # create function
         if numbers > max_value:
             max_value = numbers  # compare each number to current highest value,
             # if new number greater than that becomes max
-        else:
-            return  # otherwise move on to next number in list
+              # otherwise move on to next number in list
         print("The max value in the list :", max_value)  # print final max value (comma to join string and int)
 
 
