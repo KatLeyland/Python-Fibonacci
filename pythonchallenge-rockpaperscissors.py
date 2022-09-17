@@ -32,9 +32,9 @@ def player_choose():
     if player_hand == "r":
         player_hand = "rock"
     elif player_hand == "p":
-        player_hand = "Paper"
+        player_hand = "paper"
     elif player_hand == "s":
-        player_hand = "Scissors"
+        player_hand = "scissors"
     else:
         print("Try again, using r, s or p")
 
@@ -43,14 +43,36 @@ def computer_choose():
     global computer_hand
     num = random.randint(1,3)
     if num == 1:
-        computer_hand = "Rock"
+        computer_hand = "rock"
     elif num == 2:
-        computer_hand = "Paper"
+        computer_hand = "paper"
     else:
-        computer_hand = "Scissors"
+        computer_hand = "scissors"
 
 def choose():
     player_choose()
     computer_choose()
     print("You chose ", player_hand, ", computer chose ", computer_hand, ".")
 
+def play():
+    if player_hand == computer_hand:
+        print("Both players chose", player_hand, "it's a tie")
+    elif player_hand == "rock":
+        if computer_hand == "paper":
+            print("Paper covers rock, you lose!")
+        else:
+            print("Rock blunts scissors, you win!")
+    elif player_hand == "paper":
+        if computer_hand == "scissors":
+            print("Scissors cut paper, you lose!")
+        else:
+            print("paper covers rock, you win!")
+    else:
+        if computer_hand == "paper":
+            print("Scissors cut paper, you win!")
+        else:
+            print("Rock blunts scissors, you lose!")
+
+
+choose()
+play()
