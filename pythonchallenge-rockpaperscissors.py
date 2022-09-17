@@ -64,11 +64,12 @@ def choose():
     print("You chose ", player_hand, ", computer chose ", computer_hand, ".")
 
 
+computer_score = 0
+player_score = 0
+
 def play():
     global computer_score
-    computer_score = 0
     global player_score
-    player_score = 0
     if player_hand == computer_hand:
         print("Both players chose", player_hand, "it's a tie")
     elif player_hand == "rock":
