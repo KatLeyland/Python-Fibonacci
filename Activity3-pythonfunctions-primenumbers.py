@@ -8,8 +8,8 @@ Negative numbers can not be prime."""
 
 def primeOrnNo():
     number = int(input("Input your number here: "))
-    if number < 0:
-        print("Negative numbers can not be prime") # Weed out the negative Nancy's
+    if number =< 1:
+        print("1, 0 and Negative numbers can not be prime") # Weed out the negative Nancy's
     else:
         for i in range (1, number): #i is each number from 1 to the input
             if number % i == 0: #divide number by every lower number to test. If no remainder then not prime
