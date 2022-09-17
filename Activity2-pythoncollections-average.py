@@ -10,4 +10,4 @@ mylist=[20, 30, 25, 35, -16, 60, -100]
 total = sum(mylist)
 len = len(mylist)
 avg = total / len
-print("Average value of the list elements is :", avg)
+print("Average value of the list elements is :", round(avg, 1))
