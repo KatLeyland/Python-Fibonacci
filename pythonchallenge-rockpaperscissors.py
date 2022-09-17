@@ -67,6 +67,7 @@ def choose():
 computer_score = 0
 player_score = 0
 
+
 def play():
     global computer_score
     global player_score
@@ -100,8 +101,5 @@ while True:
     play()
     print("Computer score: ", computer_score, "Player score: ", player_score)
     play_again = (input("Do you want to play again? (Y/N): "))
-    play_again == "Y"
     if play_again == "N":
         break
-
-
